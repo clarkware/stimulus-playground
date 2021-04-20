@@ -2,7 +2,7 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
   connect() {
-    console.log("here");
-    this.element.textContent = "It works!"
+    console.log("Hello, Stimulus!", this.element)
+    this.element.textContent = "Hello, Stimulus!"
   }
 }
