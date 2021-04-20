@@ -1,0 +1,17 @@
+{
+  "name": "stimulus-examples",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.1.5"
+  },
+  "dependencies": {
+    "stimulus": "^2.0.0",
+    "stimulus-vite-helpers": "^1.0.3",
+    "vite-plugin-stimulus-hmr": "^1.0.1"
+  }
+}
