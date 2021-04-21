@@ -13,10 +13,10 @@
   <div id="app">
     <h1 data-controller="example"></h1>
 
-    <h2>Copy to Clipboard</h2>
     <div data-controller="hello">
       <input data-hello-target="name" type="text">
       <button data-action="click->hello#greet">Greet</button>
+      <p data-hello-target="greeting"></p>
     </div>
 
     <h2>Copy to Clipboard</h2>
@@ -59,6 +59,17 @@
       data-content-loader-refresh-interval-value="5000">
       Loading...
     </div>
+
+    <h2>Text Input Changes</h2>
+    <div data-controller="text-input">
+      <input type="text" data-action="text-input#changed" data-text-input-target="input">
+      <p data-text-input-target="output"></p>
+    </div>
+
+    <h2>Styling with CSS Classes</h2>
+    <form data-controller="search" data-search-loading-class="loading">
+      <input data-action="search#loadResults">
+    </form>
   </div>
 </body>
 
