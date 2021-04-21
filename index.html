@@ -35,6 +35,14 @@
       </div>
     </div>
 
+    <h2>Counter</h2>
+    <div data-controller="counter" data-counter-count-value="1">
+      <button data-action="counter#decrement"> - </button>
+      <button data-action="counter#increment"> + </button>
+
+      <div data-counter-target="currentCount"></div>
+    </div>
+
     <h2>Slideshow</h2>
     <div data-controller="slideshow" data-slideshow-index-value="1">
       <button data-action="slideshow#previous"> ← </button>
